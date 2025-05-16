@@ -13,7 +13,10 @@ const app = express();
 
 app.use(express.json());
 
-const allowedOrigins = ["http://localhost:3000"];
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://change-network-frontend.vercel.app/",
+];
 
 const corsOptions = {
   origin: function (origin, callback) {
